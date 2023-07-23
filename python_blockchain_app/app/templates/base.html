@@ -1,0 +1,20 @@
+<html>
+  <head>
+    <title>IEM    </title>
+  </head>
+  <body>
+    <div><a href="/index">Home</a></div>
+    <center><h1><img src="E:\Sarthak\study materials\3rd year\PROJECT\Blockchain\python_blockchain_app\app\templates\IEM logo.png" width="40" height="40">IEM:Decentralized Content Sharing</h1></center>
+    <hr>
+    {% with messages = get_flashed_messages() %}
+    {% if messages %}
+    <ul>
+    {% for message in messages %}
+        <li>{{ message }} </li>
+    {% endfor %}
+    </ul>
+    {% endif %}
+    {% endwith %}
+    {% block content %}{% endblock %}
+  </body>
+</html>

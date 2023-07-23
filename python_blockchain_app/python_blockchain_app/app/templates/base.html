@@ -1,0 +1,21 @@
+<html>
+  <head>
+    <title>IEM</title>
+  </head>
+  <body>
+    <div><a href="/index">Home</a></div>
+    <center><h1><img src= "E:\Sarthak\study materials\2nd year\3rd semester\Web Technology\Lab works\IEM logo.png" width="36" height="36">IEM: Decentralized content sharing</h1></center>
+    <hr>
+    {% with messages = get_flashed_messages() %}
+    {% if messages %}
+    <ul>
+    {% for message in messages %}
+        <li>{{ message }} </li>
+    {% endfor %}
+    </ul>
+    {% endif %}
+    {% endwith %}
+    {% block content %}{% endblock %}
+  </body>
+</html>
+    
